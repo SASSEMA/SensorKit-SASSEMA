@@ -21,5 +21,68 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSSensorKitUsageDescription</key>
+    <string>This app collects data passively from your phone to help understand if the collected data could help to diagnose ADHD.</string>
+    <key>NSSensorKitPrivacyPolicyURL</key>
+    <string>https://www.richmond.edu/</string>
+    <key>NSSensorKitUsageDetail</key>
+    <dict>
+        <key>SRSensorUsageMotion</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes motion data by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsageDeviceUsage</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes device usage data by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsageKeyboardMetrics</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes keyboard metric data data by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsageMessageUsage</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes data from the messages app by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsagePedometer</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes pedometer and step data by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsagePhoneUsage</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes phone usage data by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsageVisits</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes data on location visits by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+        <key>SRSensorUsageSpeechMetrics</key>
+        <dict>
+            <key>Description</key>
+            <string>This app utilizes speech metrics data by inputting the data into a machine learning model with the intent of uncovering any possible links to a potential ADHD symptoms.</string>
+            <key>Required</key>
+                <true/>
+        </dict>
+    </dict>
 </dict>
 </plist>

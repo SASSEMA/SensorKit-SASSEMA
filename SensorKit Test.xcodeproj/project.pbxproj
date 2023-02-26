@@ -49,6 +49,7 @@
 		2C608F392999A362006D650F /* SensorKit TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SensorKit TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C608F3D2999A362006D650F /* SensorKit_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorKit_TestUITests.swift; sourceTree = "<group>"; };
 		2C608F3F2999A362006D650F /* SensorKit_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorKit_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C608F4C2999B3FE006D650F /* CustomCodeSigning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomCodeSigning.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		2C608F102999A360006D650F = {
 			isa = PBXGroup;
 			children = (
+				2C608F4C2999B3FE006D650F /* CustomCodeSigning.entitlements */,
 				2C608F1B2999A360006D650F /* SensorKit Test */,
 				2C608F322999A362006D650F /* SensorKit TestTests */,
 				2C608F3C2999A362006D650F /* SensorKit TestUITests */,
@@ -435,9 +437,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CustomCodeSigning.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 857V7A5S36;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 857V7A5S36;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SensorKit Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,13 +450,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SensorKit-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = URSassema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "URSassema Sensor Kit Provisioning Profile";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "URSassema Sensor Kit Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,9 +471,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CustomCodeSigning.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 857V7A5S36;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 857V7A5S36;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SensorKit Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,13 +484,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SensorKit-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = URSassema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "URSassema Sensor Kit Provisioning Profile";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "URSassema Sensor Kit Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
